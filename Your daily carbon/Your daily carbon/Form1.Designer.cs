@@ -36,26 +36,26 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(577, 256);
+            this.button1.Location = new System.Drawing.Point(596, 388);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Open ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(90, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(109, 35);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(463, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(562, 312);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(90, 256);
+            this.textBox1.Location = new System.Drawing.Point(109, 391);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(463, 20);
             this.textBox1.TabIndex = 2;
