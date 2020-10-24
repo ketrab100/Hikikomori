@@ -8,7 +8,7 @@ namespace Your_daily_carbon
 {
     class CoreApp
     {
-        CurrentDataStorage dataStorage = new CurrentDataStorage();
+        public CurrentDataStorage dataStorage = new CurrentDataStorage();
 
         
         public void addCO2emmission(string name, string date, double co2)

@@ -16,5 +16,14 @@ namespace Your_daily_carbon
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            ListViewItem lvi = new ListViewItem(textBox1.Text);
+            lvi.SubItems.Add(textBox2.Text);
+            lvi.SubItems.Add(textBox3.Text);
+            listView1.Items.Add(lvi);
+        }
     }
 }

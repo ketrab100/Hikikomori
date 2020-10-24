@@ -34,7 +34,6 @@ namespace Your_daily_carbon
             foodlist.FormBorderStyle = FormBorderStyle.None;
             panel1.Controls.Add(foodlist);
             foodlist.Show();
-
         }
     }
 }
