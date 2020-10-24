@@ -35,5 +35,33 @@ namespace Your_daily_carbon
             panel1.Controls.Add(foodlist);
             foodlist.Show();
         }
+
+        private void addVehicleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            vehicleAdder vehicle = new vehicleAdder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            vehicle.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Add(vehicle);
+            vehicle.Show();
+
+        }
+
+        private void checCarbonPrintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            foodAdder foodadder = new foodAdder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            foodadder.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Add(foodadder);
+            foodadder.Show();
+        }
+
+        private void setDistanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            vehicleList vehiclelist = new vehicleList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            vehiclelist.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Add(vehiclelist);
+            vehiclelist.Show();
+        }
     }
 }
