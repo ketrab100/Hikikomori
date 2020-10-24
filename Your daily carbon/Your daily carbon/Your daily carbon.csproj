@@ -46,16 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarcodeReader.cs" />
+    <Compile Include="BarcodeReader.Designer.cs">
+      <DependentUpon>BarcodeReader.cs</DependentUpon>
+    </Compile>
     <Compile Include="CoreApp.cs" />
     <Compile Include="CurrentDataStorage.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="FoodList.cs" />
+    <Compile Include="FoodList.Designer.cs">
+      <DependentUpon>FoodList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BarcodeReader.resx">
+      <DependentUpon>BarcodeReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodList.resx">
+      <DependentUpon>FoodList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
