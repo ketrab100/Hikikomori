@@ -1,2 +1,0 @@
-# Hikikomori
-Best hacks project
