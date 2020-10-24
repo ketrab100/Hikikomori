@@ -18,7 +18,6 @@ namespace Your_daily_carbon
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());
-            CoreApp c = new CoreApp();
         }
     }
 }
