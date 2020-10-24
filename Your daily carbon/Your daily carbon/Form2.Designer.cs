@@ -31,12 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.FoodDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
-            this.TransportStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
-            this.summaryStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.addNewProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkCarbonPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TransportStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.addYourCarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.summaryStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.showYourCo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.openMyHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +47,7 @@
             // 
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileStripDropDownButton1,
             this.FoodDropDownButton,
             this.TransportStripSplitButton1,
             this.summaryStripSplitButton1});
@@ -65,6 +69,19 @@
             this.FoodDropDownButton.Size = new System.Drawing.Size(47, 22);
             this.FoodDropDownButton.Text = "Food";
             // 
+            // addNewProductToolStripMenuItem
+            // 
+            this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
+            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewProductToolStripMenuItem.Text = "Add new product";
+            // 
+            // checkCarbonPrintToolStripMenuItem
+            // 
+            this.checkCarbonPrintToolStripMenuItem.Name = "checkCarbonPrintToolStripMenuItem";
+            this.checkCarbonPrintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkCarbonPrintToolStripMenuItem.Text = "Check carbon print ";
+            this.checkCarbonPrintToolStripMenuItem.Click += new System.EventHandler(this.checkCarbonPrintToolStripMenuItem_Click);
+            // 
             // TransportStripSplitButton1
             // 
             this.TransportStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -75,6 +92,12 @@
             this.TransportStripSplitButton1.Name = "TransportStripSplitButton1";
             this.TransportStripSplitButton1.Size = new System.Drawing.Size(72, 22);
             this.TransportStripSplitButton1.Text = "Transport";
+            // 
+            // addYourCarToolStripMenuItem
+            // 
+            this.addYourCarToolStripMenuItem.Name = "addYourCarToolStripMenuItem";
+            this.addYourCarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addYourCarToolStripMenuItem.Text = "Add your car";
             // 
             // summaryStripSplitButton1
             // 
@@ -87,35 +110,42 @@
             this.summaryStripSplitButton1.Size = new System.Drawing.Size(74, 22);
             this.summaryStripSplitButton1.Text = "Summary";
             // 
-            // addNewProductToolStripMenuItem
-            // 
-            this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
-            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addNewProductToolStripMenuItem.Text = "Add new product";
-            // 
-            // checkCarbonPrintToolStripMenuItem
-            // 
-            this.checkCarbonPrintToolStripMenuItem.Name = "checkCarbonPrintToolStripMenuItem";
-            this.checkCarbonPrintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.checkCarbonPrintToolStripMenuItem.Text = "Check carbon print ";
-            // 
-            // addYourCarToolStripMenuItem
-            // 
-            this.addYourCarToolStripMenuItem.Name = "addYourCarToolStripMenuItem";
-            this.addYourCarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addYourCarToolStripMenuItem.Text = "Add your car";
-            // 
             // showYourCo2ToolStripMenuItem
             // 
             this.showYourCo2ToolStripMenuItem.Name = "showYourCo2ToolStripMenuItem";
             this.showYourCo2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showYourCo2ToolStripMenuItem.Text = "Show your co2";
             // 
+            // FileStripDropDownButton1
+            // 
+            this.FileStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.FileStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openMyHistoryToolStripMenuItem});
+            this.FileStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("FileStripDropDownButton1.Image")));
+            this.FileStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.FileStripDropDownButton1.Name = "FileStripDropDownButton1";
+            this.FileStripDropDownButton1.Size = new System.Drawing.Size(38, 22);
+            this.FileStripDropDownButton1.Text = "File";
+            // 
+            // openMyHistoryToolStripMenuItem
+            // 
+            this.openMyHistoryToolStripMenuItem.Name = "openMyHistoryToolStripMenuItem";
+            this.openMyHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openMyHistoryToolStripMenuItem.Text = "Open my history";
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(776, 417);
+            this.panel1.TabIndex = 1;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -136,5 +166,8 @@
         private System.Windows.Forms.ToolStripMenuItem checkCarbonPrintToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addYourCarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showYourCo2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripDropDownButton FileStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem openMyHistoryToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }
