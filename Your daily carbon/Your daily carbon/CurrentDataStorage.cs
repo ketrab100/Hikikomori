@@ -9,9 +9,16 @@ namespace Your_daily_carbon
     class CurrentDataStorage
     {
 
-        internal List<Vehicle> listOfVehicles = new List<Vehicle>();
-        internal List<Product> listofProducts = new List<Product>();
-        internal List<CO2emmission> listofEmmissions = new List<CO2emmission>();
+        public CurrentDataStorage(List<Vehicle> listOfVehicles, List<Product> listofProducts, List<CO2emmission> listofEmmissions)
+        {
+            this.listOfVehicles = listOfVehicles;
+            this.listofProducts = listofProducts;
+            this.listofEmmissions = listofEmmissions;
+        }
+
+        internal List<Vehicle> listOfVehicles;
+        internal List<Product> listofProducts;
+        internal List<CO2emmission> listofEmmissions;
 
     }
 
@@ -60,10 +67,20 @@ namespace Your_daily_carbon
             get;
             private set;
         }
+        public int id
+        {
+            get;
+            private set;
+        }
         public double co2
         {
             get;
             private set;
+        }
+
+        public void setID(int id)
+        {
+            this.id = id;
         }
     }
 
