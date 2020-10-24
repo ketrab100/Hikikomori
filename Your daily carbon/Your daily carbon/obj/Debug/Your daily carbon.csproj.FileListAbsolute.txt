@@ -20,3 +20,4 @@ C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.CoreCompileInputs.cache
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.exe
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.pdb
+C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.vehicleAdder.resources
