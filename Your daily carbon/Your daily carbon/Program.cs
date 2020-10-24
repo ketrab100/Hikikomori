@@ -16,7 +16,11 @@ namespace Your_daily_carbon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Form1());
+=======
+            Application.Run(new Form2());
+>>>>>>> parent of 7233948... product list
         }
     }
 }
