@@ -48,14 +48,18 @@ namespace Your_daily_carbon
             int i = 1;
             while ((current = sr.ReadLine()) != null)
             {
-                int id
+                string companyName;
                 string name;
-                string type;
+                int weight;
                 double co2;
                 
+                if(i%5==0)
+                {
+                    companyName=current;
+                }
                 if(i%3==0)
                 {
-                    type=current;
+                    weight=int.Parse(current);
                 }
                 if(i%4==0)
                 {
@@ -65,12 +69,9 @@ namespace Your_daily_carbon
                 {
                     name = current;
                 }
-                else
-                {
-                    id = Int.Parse(current);
-                }
+               
 
-                Product product = new Product(id,name,type,co2);
+                Product product = new Product(name,companyName,weight,co2);
                 list.Add(product);
                 i++
             }
