@@ -35,6 +35,7 @@ namespace Your_daily_carbon
                 }
                 i++;
             }
+            sr.Close();
             return list;
         }
 
@@ -56,22 +57,23 @@ namespace Your_daily_carbon
                 {
                     name = current;
                 }
-                if (i % 4 == 1)
-                {
-                    companyName = current;
-                }
                 if (i % 4 == 2)
+                {
+                    co2 = Double.Parse(current);
+                }
+                if (i % 4 == 1)
                 {
                     weight = Convert.ToDouble(current);
                 }
                 if (i % 4 == 3)
                 {
-                    co2 = Double.Parse(current);
+                    companyName = current;
                     Product product = new Product(name, companyName, weight, co2);
                     list.Add(product);
                 }
                 i++;
             }
+            sr.Close();
             return list;
         }
 
@@ -103,6 +105,7 @@ namespace Your_daily_carbon
                 }
                 i++;
             }
+            sr.Close();
             return list;
         }
 
@@ -119,6 +122,7 @@ namespace Your_daily_carbon
             {
                 sw = new StreamWriter(path, true);
             }
+
             return sw;
         }
 
@@ -133,7 +137,6 @@ namespace Your_daily_carbon
             {
                 sr = new StreamReader(path, true);
             }
-
             return sr;
         }
         public void saveVehicle(List<Vehicle> vehicles)
@@ -144,6 +147,7 @@ namespace Your_daily_carbon
                 sw.WriteLine(x.name);
                 sw.WriteLine(x.co2);
             }
+            sw.Close();
         }
 
         public void saveProducts(List<Product> product)
@@ -156,6 +160,7 @@ namespace Your_daily_carbon
                 sw.WriteLine(x.weight);
                 sw.WriteLine(x.co2);
             }
+            sw.Close();
         }
 
         public void saveCO2emission(List<CO2emmission> emission)
@@ -167,6 +172,7 @@ namespace Your_daily_carbon
                 sw.WriteLine(x.date);
                 sw.WriteLine(x.co2);
             }
+            sw.Close();
         }
 
     }
