@@ -1,4 +1,5 @@
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csprojAssemblyReference.cache
+C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.Form1.resources
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.Properties.Resources.resources
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.GenerateResource.cache
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.CoreCompileInputs.cache
@@ -12,6 +13,4 @@ C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.CopyComplete
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.exe
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.pdb
-C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.MainWindow.resources
-C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.BarcodeReader.resources
-C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.FoodList.resources
+C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.Form2.resources

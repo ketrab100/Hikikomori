@@ -16,7 +16,7 @@ namespace Your_daily_carbon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainWindow());
+            Application.Run(new Form2());
         }
     }
 }

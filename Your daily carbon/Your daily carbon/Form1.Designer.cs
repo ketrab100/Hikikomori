@@ -1,6 +1,6 @@
 ﻿namespace Your_daily_carbon
 {
-    partial class BarcodeReader
+    partial class Form1
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
