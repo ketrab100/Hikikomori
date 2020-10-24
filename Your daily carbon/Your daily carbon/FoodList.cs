@@ -24,6 +24,7 @@ namespace Your_daily_carbon
             lvi.SubItems.Add(textBox2.Text);
             lvi.SubItems.Add(textBox3.Text);
             listView1.Items.Add(lvi);
+            CoreApp.addProduct("asd", "asdas", "asd", "asd");
         }
     }
 }

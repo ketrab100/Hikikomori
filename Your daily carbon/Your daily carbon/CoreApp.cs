@@ -8,7 +8,7 @@ namespace Your_daily_carbon
 {
     class CoreApp
     {
-        public CurrentDataStorage dataStorage = new CurrentDataStorage();
+        public static CurrentDataStorage dataStorage = new CurrentDataStorage();
 
         
         public void addCO2emmission(string name, string date, double co2)
@@ -50,7 +50,7 @@ namespace Your_daily_carbon
             return print;
         }
 
-        public void addProduct(string name, string companyName, string weight, string co2)
+        public static void addProduct(string name, string companyName, string weight, string co2)
         {
             dataStorage.listofProducts.Add(new Product(name, companyName, Convert.ToInt32(weight), Convert.ToDouble(co2)));
         }
