@@ -26,5 +26,15 @@ namespace Your_daily_carbon
         {
 
         }
+
+        private void openFoodListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            FoodList foodlist = new FoodList() {Dock = DockStyle.Fill ,TopLevel = false , TopMost = false};
+            foodlist.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Add(foodlist);
+            foodlist.Show();
+
+        }
     }
 }

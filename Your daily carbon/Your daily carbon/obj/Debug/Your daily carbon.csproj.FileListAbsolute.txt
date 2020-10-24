@@ -8,3 +8,4 @@ C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.CoreCompileInputs.cache
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.exe
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.pdb
+C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.FoodList.resources
