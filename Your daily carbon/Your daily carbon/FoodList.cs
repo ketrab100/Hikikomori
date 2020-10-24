@@ -14,11 +14,14 @@ namespace Your_daily_carbon
     {
         public FoodList()
         {
+            
             InitializeComponent();
+            /*
             foreach (var p in CoreApp.dataStorage.listofProducts)
             {
                 comboBox1.Items.Add(p.name);
             }
+            */
         }
 
         private void button1_Click(object sender, EventArgs e)

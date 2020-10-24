@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.FileStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.openHistoryFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +62,6 @@
             this.FileStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.FileStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openHistoryFileToolStripMenuItem});
-            this.FileStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("FileStripDropDownButton1.Image")));
             this.FileStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.FileStripDropDownButton1.Name = "FileStripDropDownButton1";
             this.FileStripDropDownButton1.Size = new System.Drawing.Size(38, 22);
@@ -81,7 +79,6 @@
             this.FoodStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addnewfood,
             this.setfoodconsuption});
-            this.FoodStripDropDownButton4.Image = ((System.Drawing.Image)(resources.GetObject("FoodStripDropDownButton4.Image")));
             this.FoodStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.FoodStripDropDownButton4.Name = "FoodStripDropDownButton4";
             this.FoodStripDropDownButton4.Size = new System.Drawing.Size(47, 22);
@@ -92,14 +89,14 @@
             this.addnewfood.Name = "addnewfood";
             this.addnewfood.Size = new System.Drawing.Size(228, 22);
             this.addnewfood.Text = "Add new food to list";
-            this.addnewfood.Click += new System.EventHandler(this.openFoodListToolStripMenuItem_Click);
+            this.addnewfood.Click += new System.EventHandler(this.addFoodListToolStripMenuItem_Click);
             // 
             // setfoodconsuption
             // 
             this.setfoodconsuption.Name = "setfoodconsuption";
             this.setfoodconsuption.Size = new System.Drawing.Size(228, 22);
             this.setfoodconsuption.Text = "Set consumption of products";
-            this.setfoodconsuption.Click += new System.EventHandler(this.checCarbonPrintToolStripMenuItem_Click);
+            this.setfoodconsuption.Click += new System.EventHandler(this.setProductsConsumptionToolStripMenuItem_Click);
             // 
             // TransportStripDropDownButton3
             // 
@@ -107,7 +104,6 @@
             this.TransportStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addVehicleToolStripMenuItem,
             this.setDistanceToolStripMenuItem});
-            this.TransportStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("TransportStripDropDownButton3.Image")));
             this.TransportStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TransportStripDropDownButton3.Name = "TransportStripDropDownButton3";
             this.TransportStripDropDownButton3.Size = new System.Drawing.Size(69, 22);
@@ -133,7 +129,6 @@
             this.SummaryStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.SummaryStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showCo2EmitionToolStripMenuItem});
-            this.SummaryStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("SummaryStripDropDownButton2.Image")));
             this.SummaryStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SummaryStripDropDownButton2.Name = "SummaryStripDropDownButton2";
             this.SummaryStripDropDownButton2.Size = new System.Drawing.Size(71, 22);
@@ -143,7 +138,7 @@
             // showCo2EmitionToolStripMenuItem
             // 
             this.showCo2EmitionToolStripMenuItem.Name = "showCo2EmitionToolStripMenuItem";
-            this.showCo2EmitionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showCo2EmitionToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.showCo2EmitionToolStripMenuItem.Text = "Show co2 emition";
             // 
             // panel1

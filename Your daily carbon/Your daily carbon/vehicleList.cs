@@ -14,8 +14,9 @@ namespace Your_daily_carbon
     {
         public vehicleList()
         {
-            /*
+            
             InitializeComponent();
+            /*
             foreach (var t in CoreApp.dataStorage.listOfVehicles)
             {
                 comboBox1.Items.Add(t.name);

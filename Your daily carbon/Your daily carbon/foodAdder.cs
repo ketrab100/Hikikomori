@@ -15,13 +15,14 @@ namespace Your_daily_carbon
         public foodAdder()
         {
             InitializeComponent();
-            
+            /*
             foreach(var p in CoreApp.dataStorage.listofProducts)
             {
                 ListViewItem lvi = new ListViewItem(textBox1.Text);
                 lvi.SubItems.Add(textBox2.Text);
                 listView1.Items.Add(lvi);
             }
+            */
             
 
         }
