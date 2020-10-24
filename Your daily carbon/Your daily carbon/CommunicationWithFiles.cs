@@ -29,7 +29,7 @@ namespace Your_daily_carbon
                 }
                 else
                 {
-                    co2 = ToDouble(current);
+                    co2 = Convert.ToDouble(current);
                 }
 
                 Vehicle vehicle = new Vehicle(name, co2);
@@ -73,7 +73,7 @@ namespace Your_daily_carbon
 
                 Product product = new Product(name,companyName,weight,co2);
                 list.Add(product);
-                i++
+                i++;
             }
             
         }
@@ -108,12 +108,12 @@ namespace Your_daily_carbon
 
             return sr;
         }
-        public void saveDailyCarbonPrin(string name, int carbonPrint)
+        public void saveDailyCarbonPrint(string name, int carbonPrint)
         {
             DateTime today = DateTime.Today;
             string s = "" + today;
             string information = today + "your carbon foot print was:" + carbonPrint;
-            StreamWriter sw = createStreamWriter();
+            StreamWriter sw = createStreamWriter(@"CarbonPrint.txt");
             sw.WriteLine();
         }
 
