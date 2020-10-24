@@ -67,10 +67,20 @@ namespace Your_daily_carbon
             get;
             private set;
         }
+        public int id
+        {
+            get;
+            private set;
+        }
         public double co2
         {
             get;
             private set;
+        }
+
+        public void setID(int id)
+        {
+            this.id = id;
         }
     }
 

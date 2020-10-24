@@ -11,6 +11,7 @@ namespace Your_daily_carbon
         CommunicationWithFiles fileExplorer = new CommunicationWithFiles();
         CurrentDataStorage dataStorage;
 
+
         public void startApp()
         {
              dataStorage = new CurrentDataStorage(fileExplorer.getListOfVehicles(), fileExplorer.getListOfProducts(), fileExplorer.getListOfEmmissions());
