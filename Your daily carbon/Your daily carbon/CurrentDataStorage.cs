@@ -11,14 +11,14 @@ namespace Your_daily_carbon
 
         internal List<Vehicle> listOfVehicles = new List<Vehicle>();
         internal List<Product> listofProducts = new List<Product>();
-
+        internal List<CO2emmission> listofEmmissions = new List<CO2emmission>();
 
     }
 
     class Vehicle
     {
 
-        public Vehicle(string name, int co2)
+        public Vehicle(string name, double co2)
         {
             this.name = name;
             this.co2 = co2;
@@ -29,7 +29,7 @@ namespace Your_daily_carbon
             private set;
         }
 
-        public float co2
+        public double co2
         {
             get;
             private set;
@@ -38,7 +38,7 @@ namespace Your_daily_carbon
 
     class Product
     {
-        public Product(string name, string companyName, int weight, co2)
+        public Product(string name, string companyName, int weight, double co2)
         {
             this.name = name;
             this.companyName = companyName;
@@ -60,7 +60,33 @@ namespace Your_daily_carbon
             get;
             private set;
         }
-        public float co2
+        public double co2
+        {
+            get;
+            private set;
+        }
+    }
+
+    class CO2emmission
+    {
+        public CO2emmission(string name, string date, double co2)
+        {
+            this.name = name;
+            this.co2 = co2;
+            this.date = date;
+        }
+        public string name
+        {
+            get;
+            private set;
+        }
+        public string date
+        {
+            get;
+            private set;
+        }
+
+        public double co2
         {
             get;
             private set;

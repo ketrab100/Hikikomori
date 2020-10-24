@@ -10,9 +10,29 @@ namespace Your_daily_carbon
     {
         CurrentDataStorage dataStorage = new CurrentDataStorage();
 
+        
+        public void addCO2emmission(string name, string date, double co2)
+        {
+            dataStorage.listofEmmissions.Add(new CO2emmission(name, date, co2));
+        }
+        public string showCO2emmission()
+        {
+            string print = "    Currently you have " + dataStorage.listofEmmissions.Count() + "CO2 emmissions added: \n";
+            //wypisz linię informującą o ilości różnych składników, potem je wypisuje po kolei ze spalaniem na g/km
+            print += "    Description            |    Date            |    CO2emission [g/km]";
+
+            for (int q = 0; q < dataStorage.listofEmmissions.Count(); q++)
+            {
+                print += "    ";
+                print += makeWordFit(dataStorage.listofEmmissions[q].name, 23);
+                print += makeWordFit(dataStorage.listofEmmissions[q].date, 16);
+                print += Convert.ToString(dataStorage.listofEmmissions[q].co2) + "\n";
+            }
+            return print;
+        }
         public void addTransportMethod(string name, string co2)
         {
-            dataStorage.listOfVehicles.Add(new Vehicle(name, Convert.ToInt32(co2)));
+            dataStorage.listOfVehicles.Add(new Vehicle(name, Convert.ToDouble(co2)));
         }
 
         public string showTransportMethods()
@@ -32,13 +52,13 @@ namespace Your_daily_carbon
 
         public void addProduct(string name, string companyName, string weight, string co2)
         {
-            dataStorage.listofProducts.Add(new Product(name, companyName, Convert.ToInt32(weight), Convert.ToInt32(co2)));
+            dataStorage.listofProducts.Add(new Product(name, companyName, Convert.ToInt32(weight), Convert.ToDouble(co2)));
         }
 
         public string showProducts()
         {
-            string print = "    Currently you have " + dataStorage.listofProducts.Count() + "means of transport added: \n";
-            //wypisz linię informującą o ilości różnych środków transportu, potem je wypisuje po kolei ze spalaniem na g/km
+            string print = "    Currently you have " + dataStorage.listofProducts.Count() + "products added: \n";
+            //wypisz linię informującą o ilości różnych składników, potem je wypisuje po kolei ze spalaniem na g/km
             print += "    Product name            |    Company name            |    Weight [g]    |    CO2emission [g/km]";
 
             for (int q = 0; q < dataStorage.listOfVehicles.Count(); q++)
