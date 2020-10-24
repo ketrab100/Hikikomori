@@ -8,20 +8,9 @@ namespace Your_daily_carbon
 {
     class CoreApp
     {
-        CommunicationWithFiles fileExplorer = new CommunicationWithFiles();
-        CurrentDataStorage dataStorage;
+        public CurrentDataStorage dataStorage = new CurrentDataStorage();
 
-
-        public void startApp()
-        {
-             dataStorage = new CurrentDataStorage(fileExplorer.getListOfVehicles(), fileExplorer.getListOfProducts(), fileExplorer.getListOfEmmissions());
-        }
-        public void closeApp()
-        {
-            fileExplorer.saveListOfVehicles(dataStorage.listOfVehicles);
-            fileExplorer.saveListOfProducts(dataStorage.listofProducts);
-            fileExplorer.saveListOfEmmissions(dataStorage.listofEmmissions);
-        }
+        
         public void addCO2emmission(string name, string date, double co2)
         {
             dataStorage.listofEmmissions.Add(new CO2emmission(name, date, co2));
