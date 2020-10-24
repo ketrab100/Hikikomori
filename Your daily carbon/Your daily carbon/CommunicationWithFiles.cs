@@ -45,7 +45,7 @@ namespace Your_daily_carbon
             string current;
             StreamReader sr = createStreamReader(@"Products.txt");
 
-            int i = 1;
+            int i = 0;
             while ((current = sr.ReadLine()) != null)
             {
                 string companyName = "";
