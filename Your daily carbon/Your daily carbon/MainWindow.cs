@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Your_daily_carbon
 {
-    public partial class Form2 : Form
+    public partial class MainWindow : Form
     {
-        public Form2()
+        public MainWindow()
         {
             InitializeComponent();
         }
@@ -29,9 +29,19 @@ namespace Your_daily_carbon
 
         private void checkCarbonPrintToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1() {Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            mainPanel.Controls.Clear();
+            BarcodeReader frm = new BarcodeReader() {Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
             frm.FormBorderStyle = FormBorderStyle.None;
-            panel1.Controls.Add(frm);
+            mainPanel.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void addNewProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainPanel.Controls.Clear();
+            FoodList frm = new FoodList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            frm.FormBorderStyle = FormBorderStyle.None;
+            mainPanel.Controls.Add(frm);
             frm.Show();
         }
     }

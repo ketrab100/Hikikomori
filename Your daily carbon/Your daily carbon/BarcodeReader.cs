@@ -11,9 +11,9 @@ using ZXing;
 
 namespace Your_daily_carbon
 {
-    public partial class Form1 : Form
+    public partial class BarcodeReader : Form
     {
-        public Form1()
+        public BarcodeReader()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Your_daily_carbon
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 string filePath = ofd.FileName;
-                BarcodeReader reader = new BarcodeReader();
+                ZXing.BarcodeReader reader = new ZXing.BarcodeReader();
                 Bitmap bitmap = new Bitmap(filePath);
                 pictureBox1.SizeMode = PictureBoxSizeMode.Zoom; 
                 pictureBox1.Image = bitmap;
