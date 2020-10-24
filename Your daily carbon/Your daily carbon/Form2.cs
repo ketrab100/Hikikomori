@@ -26,13 +26,5 @@ namespace Your_daily_carbon
         {
 
         }
-
-        private void checkCarbonPrintToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form1 frm = new Form1() {Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
-            frm.FormBorderStyle = FormBorderStyle.None;
-            panel1.Controls.Add(frm);
-            frm.Show();
-        }
     }
 }
