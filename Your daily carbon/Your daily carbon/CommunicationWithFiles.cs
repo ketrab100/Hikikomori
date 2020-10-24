@@ -34,7 +34,45 @@ namespace Your_daily_carbon
 
                 Vehicle vehicle = new Vehicle(name, co2);
                 list.Add(Vehicle);
+                i++;
+            }
+            
+        }
+        
+        public List<> getListOfProducts()
+        {
+            List<int> list = new List<int>;
+            string current;
+            StreamReader sr = createStreamReader(@"Products.txt");
 
+            int i = 1;
+            while ((current = sr.ReadLine()) != null)
+            {
+                int id
+                string name;
+                string type;
+                double co2;
+                
+                if(i%3==0)
+                {
+                    type=current;
+                }
+                if(i%4==0)
+                {
+                    co2=Double.Parse(current);
+                }
+                if (i % 2 == 0)
+                {
+                    name = current;
+                }
+                else
+                {
+                    id = Int.Parse(current);
+                }
+
+                Product product = new Product(id,name,type,co2);
+                list.Add(product);
+                i++
             }
             
         }
