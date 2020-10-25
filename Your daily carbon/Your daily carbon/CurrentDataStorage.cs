@@ -44,7 +44,7 @@ namespace Your_daily_carbon
 
     class Product
     {
-        public Product(string name, string companyName, int weight, double co2)
+        public Product(string name, string companyName, double weight, double co2)
         {
             this.name = name;
             this.companyName = companyName;
@@ -61,7 +61,7 @@ namespace Your_daily_carbon
             get;
             private set;
         }
-        public int weight
+        public double weight
         {
             get;
             private set;
