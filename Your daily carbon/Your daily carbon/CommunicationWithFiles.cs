@@ -16,12 +16,12 @@ namespace Your_daily_carbon
         {
             List<Vehicle> list = new List<Vehicle>();
             string current;
+            string name= "";
             StreamReader sr = createStreamReader(@"Vehicles.txt");
 
             int i = 0;
             while ((current = sr.ReadLine()) != null)
             {
-                string name = "";
                 double co2 = 0;
                 if (i == 0)
                 {
@@ -37,6 +37,8 @@ namespace Your_daily_carbon
                 i++;
             }
             sr.Close();
+
+            //MessageBox.Show("wypisz " + Convert.ToString(list.Count));
             return list;
         }
 
@@ -44,13 +46,13 @@ namespace Your_daily_carbon
         {
             List<Product> list = new List<Product>();
             string current;
+            string companyName = "";
+            string name = "";
             StreamReader sr = createStreamReader(@"Products.txt");
 
             int i = 0;
             while ((current = sr.ReadLine()) != null)
             {
-                string companyName = "";
-                string name = "";
                 //double weight = 0;
                 double co2 = 0;
 
@@ -76,6 +78,8 @@ namespace Your_daily_carbon
                 i++;
             }
             sr.Close();
+
+            //MessageBox.Show("wypisz " + Convert.ToString(list.Count));
             return list;
         }
 
@@ -83,13 +87,13 @@ namespace Your_daily_carbon
         {
             List<CO2emmission> list = new List<CO2emmission>();
             string current;
+            string name = "";
+            string date = "";
             StreamReader sr = createStreamReader(@"CO2emissions.txt");
 
             int i = 0;
             while ((current = sr.ReadLine()) != null)
             {
-                string name = "";
-                string date = "";
                 double co2 = 0;
                 if (i == 0)
                 {
@@ -109,6 +113,8 @@ namespace Your_daily_carbon
                 i++;
             }
             sr.Close();
+
+            //MessageBox.Show("wypisz " + Convert.ToString(list.Count));
             return list;
         }
 
