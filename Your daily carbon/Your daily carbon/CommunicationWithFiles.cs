@@ -114,7 +114,6 @@ namespace Your_daily_carbon
 
         public StreamWriter createStreamWriter(string path)
         {
-            ///string path = @"DailyCarbonPrint.txt";
             StreamWriter sw;
 
             if (!File.Exists(path))
