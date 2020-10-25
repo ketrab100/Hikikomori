@@ -9,14 +9,14 @@ namespace Your_daily_carbon
 {
     class CoreApp
     {
-        CommunicationWithFiles fileExplorer = new CommunicationWithFiles();
+        static CommunicationWithFiles fileExplorer = new CommunicationWithFiles();
         public static CurrentDataStorage dataStorage;
 
-        public void startApp()
+        public static void startApp()
         {
             dataStorage = new CurrentDataStorage(fileExplorer.getListOfVehicles(), fileExplorer.getListOfProducts(), fileExplorer.getListOfCO2emmission());
         }
-        public void closeApp()
+        public static void closeApp()
             {
             fileExplorer.saveVehicle(dataStorage.listOfVehicles);
             fileExplorer.saveProducts(dataStorage.listofProducts);
@@ -29,7 +29,7 @@ namespace Your_daily_carbon
             dataStorage.listOfVehicles.Add(new Vehicle(name, Convert.ToDouble(co2)));
         }
 
-        public static void addProduct(string name, string companyName, string weight, string co2)
+        public static void addProduct(string name, string companyName, string co2)
         {
             dataStorage.listofProducts.Add(new Product(name, companyName, Convert.ToDouble(co2)));
         }
@@ -99,7 +99,6 @@ namespace Your_daily_carbon
                 print += "    ";
                 print += makeWordFit(dataStorage.listofProducts[q].name, 24);
                 print += makeWordFit(dataStorage.listofProducts[q].companyName, 24);
-                print += makeWordFit(Convert.ToString(dataStorage.listofProducts[q].weight), 14);
                 print += Convert.ToString(dataStorage.listofProducts[q].co2) + "\n";
             }
             return print;
