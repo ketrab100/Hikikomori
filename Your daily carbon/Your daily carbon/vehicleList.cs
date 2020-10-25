@@ -22,6 +22,8 @@ namespace Your_daily_carbon
                 comboBox1.Items.Add(t.name);
             }
             */
+            
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

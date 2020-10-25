@@ -58,7 +58,7 @@ namespace Your_daily_carbon
                 {
                     name = current;
                 }
-                if (i == 2)
+                if (i == 1)
                 {
                     companyName = current;
                 }
@@ -66,7 +66,7 @@ namespace Your_daily_carbon
                 {
                     weight = Double.Parse(current);
                 }*/
-                if (i == 3)
+                if (i == 2)
                 {
                     co2 = Convert.ToDouble(current);
                     Product product = new Product(name, companyName, co2);
