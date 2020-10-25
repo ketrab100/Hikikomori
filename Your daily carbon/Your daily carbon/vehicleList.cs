@@ -35,5 +35,10 @@ namespace Your_daily_carbon
             lvi.SubItems.Add(textBox1.Text);
             listView1.Items.Add(lvi);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

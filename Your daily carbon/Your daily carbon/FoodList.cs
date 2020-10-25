@@ -28,12 +28,16 @@ namespace Your_daily_carbon
         {
             ListViewItem lvi = new ListViewItem(comboBox1.Text);
             lvi.SubItems.Add(textBox2.Text);
-            lvi.SubItems.Add(textBox3.Text);
             listView1.Items.Add(lvi);
             CoreApp.addProduct("asd", "asdas", "asd", "asd");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
