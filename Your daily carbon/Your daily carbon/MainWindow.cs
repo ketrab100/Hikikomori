@@ -75,7 +75,7 @@ namespace Your_daily_carbon
             {
                 a += em.co2;
             }
-            MessageBox.Show("Your co2 emission" + a.ToString());
+            MessageBox.Show("Your co2 emission: " + a.ToString());
         }
     }
 }
