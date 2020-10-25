@@ -16,12 +16,14 @@ namespace Your_daily_carbon
         {
             
             InitializeComponent();
-            /*
+            
             foreach (var t in CoreApp.dataStorage.listOfVehicles)
             {
                 comboBox1.Items.Add(t.name);
             }
-            */
+          
+            
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -33,7 +35,13 @@ namespace Your_daily_carbon
         {
             ListViewItem lvi = new ListViewItem(comboBox1.Text);
             lvi.SubItems.Add(textBox1.Text);
+            lvi.SubItems.Add(CoreApp.addCO2emmissionTravelling(comboBox1.Text, "", textBox1.Text).ToString());
             listView1.Items.Add(lvi);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

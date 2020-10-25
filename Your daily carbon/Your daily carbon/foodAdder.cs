@@ -15,14 +15,14 @@ namespace Your_daily_carbon
         public foodAdder()
         {
             InitializeComponent();
-            /*
+            
             foreach(var p in CoreApp.dataStorage.listofProducts)
             {
                 ListViewItem lvi = new ListViewItem(textBox1.Text);
                 lvi.SubItems.Add(textBox2.Text);
                 listView1.Items.Add(lvi);
             }
-            */
+            
             
 
         }
@@ -33,6 +33,16 @@ namespace Your_daily_carbon
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

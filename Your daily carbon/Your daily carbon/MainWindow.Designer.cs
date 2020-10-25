@@ -53,7 +53,7 @@
             this.SummaryStripDropDownButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(878, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -113,14 +113,14 @@
             // addVehicleToolStripMenuItem
             // 
             this.addVehicleToolStripMenuItem.Name = "addVehicleToolStripMenuItem";
-            this.addVehicleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addVehicleToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.addVehicleToolStripMenuItem.Text = "Add vehicle";
             this.addVehicleToolStripMenuItem.Click += new System.EventHandler(this.addVehicleToolStripMenuItem_Click);
             // 
             // setDistanceToolStripMenuItem
             // 
             this.setDistanceToolStripMenuItem.Name = "setDistanceToolStripMenuItem";
-            this.setDistanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.setDistanceToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.setDistanceToolStripMenuItem.Text = "Set distance";
             this.setDistanceToolStripMenuItem.Click += new System.EventHandler(this.setDistanceToolStripMenuItem_Click);
             // 
@@ -145,14 +145,14 @@
             // 
             this.panel1.Location = new System.Drawing.Point(12, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 410);
+            this.panel1.Size = new System.Drawing.Size(854, 445);
             this.panel1.TabIndex = 1;
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(878, 485);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "MainWindow";

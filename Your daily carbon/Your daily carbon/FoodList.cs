@@ -16,24 +16,28 @@ namespace Your_daily_carbon
         {
             
             InitializeComponent();
-            /*
+            
             foreach (var p in CoreApp.dataStorage.listofProducts)
             {
                 comboBox1.Items.Add(p.name);
             }
-            */
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ListViewItem lvi = new ListViewItem(comboBox1.Text);
             lvi.SubItems.Add(textBox2.Text);
-            lvi.SubItems.Add(textBox3.Text);
+            lvi.SubItems.Add(CoreApp.addCO2emmissionEating(comboBox1.Text,"",textBox2.Text).ToString());
             listView1.Items.Add(lvi);
-            CoreApp.addProduct("asd", "asdas", "asd");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

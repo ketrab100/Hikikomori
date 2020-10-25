@@ -15,14 +15,14 @@ namespace Your_daily_carbon
         public vehicleAdder()
         {
             InitializeComponent();
-            /*
+            
             foreach(var t in CoreApp.dataStorage.listOfVehicles)
             {
                 ListViewItem lvi = new ListViewItem(textBox1.Text);
                 lvi.SubItems.Add(textBox2.Text);
                 listView1.Items.Add(lvi);
             }
-            */
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
