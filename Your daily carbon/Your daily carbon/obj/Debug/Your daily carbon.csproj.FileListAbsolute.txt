@@ -31,9 +31,6 @@ C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\
 C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.CoreCompileInputs.cache
 C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.exe
 C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.pdb
-C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.foodAdder.resources
-C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.vehicleAdder.resources
-C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.vehicleList.resources
-C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\bin\Debug\Your daily carbon.exe.config
-C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\bin\Debug\Your daily carbon.exe
-C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\bin\Debug\Your daily carbon.pdb
+C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.foodAdder.resources
+C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.vehicleAdder.resources
+C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.vehicleList.resources
