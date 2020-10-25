@@ -36,13 +36,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.co2Header1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.vehicleHeader1,
-            this.distanceHeader1});
+            this.distanceHeader1,
+            this.co2Header1});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
@@ -106,6 +108,11 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Distance [km]";
             // 
+            // co2Header1
+            // 
+            this.co2Header1.Text = "co2 emission";
+            this.co2Header1.Width = 100;
+            // 
             // vehicleList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,5 +141,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ColumnHeader co2Header1;
     }
 }
