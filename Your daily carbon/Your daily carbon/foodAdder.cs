@@ -29,7 +29,7 @@ namespace Your_daily_carbon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CoreApp.addProduct(textBox1.Text, textBox2.Text,"asdas","asdas");
+            CoreApp.addProduct(textBox1.Text,"dsda" , textBox2.Text);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
