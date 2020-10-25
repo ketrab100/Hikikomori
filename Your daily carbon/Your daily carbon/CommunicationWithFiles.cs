@@ -159,7 +159,6 @@ namespace Your_daily_carbon
             {
                 sw.WriteLine(x.name);
                 sw.WriteLine(x.companyName);
-                sw.WriteLine(x.weight);
                 sw.WriteLine(x.co2);
             }
             sw.Close();
