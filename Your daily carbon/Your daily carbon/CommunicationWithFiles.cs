@@ -23,15 +23,16 @@ namespace Your_daily_carbon
             {
                 string name = "";
                 double co2 = 0;
-                if (i % 2 == 0)
+                if (i == 0)
                 {
                     name = current;
                 }
-                if (i % 2 == 1)
+                if (i == 1)
                 {
                     co2 = Convert.ToDouble(current);
                     Vehicle vehicle = new Vehicle(name, co2);
                     list.Add(vehicle);
+                    i = -1;
                 }
                 i++;
             }
@@ -53,23 +54,24 @@ namespace Your_daily_carbon
                 double weight = 0;
                 double co2 = 0;
 
-                if (i % 4 == 0)
+                if (i == 0)
                 {
                     name = current;
                 }
-                if (i % 4 == 2)
-                {
-                    co2 = Double.Parse(current);
-                }
-                if (i % 4 == 1)
-                {
-                    weight = Convert.ToDouble(current);
-                }
-                if (i % 4 == 3)
+                if (i == 2)
                 {
                     companyName = current;
+                }
+                if (i == 3)
+                {
+                    weight = Double.Parse(current);
+                }
+                if (i == 4)
+                {
+                    co2 = Convert.ToDouble(current);
                     Product product = new Product(name, companyName, weight, co2);
                     list.Add(product);
+                    i = -1;
                 }
                 i++;
             }
@@ -89,19 +91,20 @@ namespace Your_daily_carbon
                 string name = "";
                 string date = "";
                 double co2 = 0;
-                if (i % 3 == 0)
+                if (i == 0)
                 {
                     name = current;
                 }
-                if (i % 3 == 1)
+                if (i == 1)
                 {
                     date = current;
                 }
-                if (i % 3 == 2)
+                if (i == 2)
                 {
                     co2 = Convert.ToDouble(current);
                     CO2emmission emission = new CO2emmission(name, date, co2);
                     list.Add(emission);
+                    i = -1;
                 }
                 i++;
             }
