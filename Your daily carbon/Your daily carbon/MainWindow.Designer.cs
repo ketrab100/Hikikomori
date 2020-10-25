@@ -138,8 +138,9 @@
             // showCo2EmitionToolStripMenuItem
             // 
             this.showCo2EmitionToolStripMenuItem.Name = "showCo2EmitionToolStripMenuItem";
-            this.showCo2EmitionToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.showCo2EmitionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showCo2EmitionToolStripMenuItem.Text = "Show co2 emition";
+            this.showCo2EmitionToolStripMenuItem.Click += new System.EventHandler(this.showCo2EmitionToolStripMenuItem_Click);
             // 
             // panel1
             // 

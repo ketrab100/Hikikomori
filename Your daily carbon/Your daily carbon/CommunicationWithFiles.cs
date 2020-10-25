@@ -122,7 +122,7 @@ namespace Your_daily_carbon
             }
             else
             {
-                sw = new StreamWriter(path, true);
+                sw = new StreamWriter(path);
             }
 
             return sw;

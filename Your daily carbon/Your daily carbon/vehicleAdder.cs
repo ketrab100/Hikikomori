@@ -28,6 +28,11 @@ namespace Your_daily_carbon
         private void button1_Click(object sender, EventArgs e)
         {
             CoreApp.addTransportMethod(textBox1.Text, textBox2.Text);
+            ListViewItem lvi = new ListViewItem(textBox1.Text);
+            lvi.SubItems.Add(textBox2.Text);
+            listView1.Items.Add(lvi);
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
     }
 }

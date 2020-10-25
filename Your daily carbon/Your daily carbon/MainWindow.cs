@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -65,6 +66,16 @@ namespace Your_daily_carbon
             foodlist.FormBorderStyle = FormBorderStyle.None;
             panel1.Controls.Add(foodlist);
             foodlist.Show();
+        }
+
+        private void showCo2EmitionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            double a = new double();
+            foreach(var em in  CoreApp.dataStorage.listofEmmissions)
+            {
+                a += em.co2;
+            }
+            MessageBox.Show("Your co2 emission: " + a.ToString());
         }
     }
 }
