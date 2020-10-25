@@ -48,7 +48,6 @@ namespace Your_daily_carbon
         {
             this.name = name;
             this.companyName = companyName;
-            //this.weight = weight;
             this.co2 = co2;
         }
         public string name
@@ -57,11 +56,6 @@ namespace Your_daily_carbon
             private set;
         }
         public string companyName
-        {
-            get;
-            private set;
-        }
-        public double weight
         {
             get;
             private set;
@@ -76,7 +70,6 @@ namespace Your_daily_carbon
             get;
             private set;
         }
-
         public void setID(int id)
         {
             this.id = id;

@@ -15,9 +15,11 @@ namespace Your_daily_carbon
         [STAThread]
         static void Main()
         {
+            CoreApp.startApp();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());
+            CoreApp.closeApp();
         }
     }
 }
