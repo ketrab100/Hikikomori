@@ -44,11 +44,11 @@ namespace Your_daily_carbon
 
     class Product
     {
-        public Product(string name, string companyName, double weight, double co2)
+        public Product(string name, string companyName, double co2)
         {
             this.name = name;
             this.companyName = companyName;
-            this.weight = weight;
+            //this.weight = weight;
             this.co2 = co2;
         }
         public string name
