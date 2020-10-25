@@ -8,16 +8,15 @@ namespace Your_daily_carbon
 {
     class CurrentDataStorage
     {
-        public CurrentDataStorage(List<Vehicle> listOfVehicles, List<Product> listofProducts, List<CO2emmission> listofEmmissions)
+        public CurrentDataStorage(List<Vehicle> listOfVehicles, List<Product> listofProducts)
         {
             this.listOfVehicles = listOfVehicles;
             this.listofProducts = listofProducts;
-            this.listofEmmissions = listofEmmissions;
         }
         
         internal List<Vehicle> listOfVehicles;
         internal List<Product> listofProducts;
-        internal List<CO2emmission> listofEmmissions;
+        internal List<CO2emmission> listofEmmissions=new List<CO2emmission>();
 
     }
 

@@ -14,7 +14,7 @@ namespace Your_daily_carbon
 
         public static void startApp()
         {
-            dataStorage = new CurrentDataStorage(fileExplorer.getListOfVehicles(), fileExplorer.getListOfProducts(), fileExplorer.getListOfCO2emmission());
+            dataStorage = new CurrentDataStorage(fileExplorer.getListOfVehicles(), fileExplorer.getListOfProducts());
         }
         public static void closeApp()
             {
