@@ -9,6 +9,7 @@ C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.exe
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.pdb
 C:\Users\Bartek\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.FoodList.resources
+
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\bin\Debug\Your daily carbon.exe.config
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\bin\Debug\Your daily carbon.exe
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\bin\Debug\Your daily carbon.pdb
@@ -20,3 +21,13 @@ C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.CoreCompileInputs.cache
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.exe
 C:\Users\szymo\OneDrive\Dokumenty\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.pdb
+
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csprojAssemblyReference.cache
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.FoodList.resources
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.MainWindow.resources
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your_daily_carbon.Properties.Resources.resources
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.GenerateResource.cache
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.csproj.CoreCompileInputs.cache
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.exe
+C:\Users\Wiktor\Documents\GitHub\Hikikomori\Your daily carbon\Your daily carbon\obj\Debug\Your daily carbon.pdb
+

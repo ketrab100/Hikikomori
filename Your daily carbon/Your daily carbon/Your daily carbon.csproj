@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommunicationWithFiles.cs" />
     <Compile Include="CoreApp.cs" />
     <Compile Include="CurrentDataStorage.cs" />
     <Compile Include="FoodList.cs">
