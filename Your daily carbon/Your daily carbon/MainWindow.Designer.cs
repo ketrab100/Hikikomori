@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.FileStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.openHistoryFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FoodStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.openFoodListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checCarbonPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addnewfood = new System.Windows.Forms.ToolStripMenuItem();
+            this.setfoodconsuption = new System.Windows.Forms.ToolStripMenuItem();
             this.TransportStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
             this.addVehicleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setDistanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +62,6 @@
             this.FileStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.FileStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openHistoryFileToolStripMenuItem});
-            this.FileStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("FileStripDropDownButton1.Image")));
             this.FileStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.FileStripDropDownButton1.Name = "FileStripDropDownButton1";
             this.FileStripDropDownButton1.Size = new System.Drawing.Size(38, 22);
@@ -79,26 +77,26 @@
             // 
             this.FoodStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.FoodStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openFoodListToolStripMenuItem,
-            this.checCarbonPrintToolStripMenuItem});
-            this.FoodStripDropDownButton4.Image = ((System.Drawing.Image)(resources.GetObject("FoodStripDropDownButton4.Image")));
+            this.addnewfood,
+            this.setfoodconsuption});
             this.FoodStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.FoodStripDropDownButton4.Name = "FoodStripDropDownButton4";
             this.FoodStripDropDownButton4.Size = new System.Drawing.Size(47, 22);
             this.FoodStripDropDownButton4.Text = "Food";
             // 
-            // openFoodListToolStripMenuItem
+            // addnewfood
             // 
-            this.openFoodListToolStripMenuItem.Name = "openFoodListToolStripMenuItem";
-            this.openFoodListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.openFoodListToolStripMenuItem.Text = "Open food list";
-            this.openFoodListToolStripMenuItem.Click += new System.EventHandler(this.openFoodListToolStripMenuItem_Click);
+            this.addnewfood.Name = "addnewfood";
+            this.addnewfood.Size = new System.Drawing.Size(228, 22);
+            this.addnewfood.Text = "Add new food to list";
+            this.addnewfood.Click += new System.EventHandler(this.addFoodListToolStripMenuItem_Click);
             // 
-            // checCarbonPrintToolStripMenuItem
+            // setfoodconsuption
             // 
-            this.checCarbonPrintToolStripMenuItem.Name = "checCarbonPrintToolStripMenuItem";
-            this.checCarbonPrintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.checCarbonPrintToolStripMenuItem.Text = "Chec carbon print";
+            this.setfoodconsuption.Name = "setfoodconsuption";
+            this.setfoodconsuption.Size = new System.Drawing.Size(228, 22);
+            this.setfoodconsuption.Text = "Set consumption of products";
+            this.setfoodconsuption.Click += new System.EventHandler(this.setProductsConsumptionToolStripMenuItem_Click);
             // 
             // TransportStripDropDownButton3
             // 
@@ -106,7 +104,6 @@
             this.TransportStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addVehicleToolStripMenuItem,
             this.setDistanceToolStripMenuItem});
-            this.TransportStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("TransportStripDropDownButton3.Image")));
             this.TransportStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TransportStripDropDownButton3.Name = "TransportStripDropDownButton3";
             this.TransportStripDropDownButton3.Size = new System.Drawing.Size(69, 22);
@@ -118,19 +115,20 @@
             this.addVehicleToolStripMenuItem.Name = "addVehicleToolStripMenuItem";
             this.addVehicleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addVehicleToolStripMenuItem.Text = "Add vehicle";
+            this.addVehicleToolStripMenuItem.Click += new System.EventHandler(this.addVehicleToolStripMenuItem_Click);
             // 
             // setDistanceToolStripMenuItem
             // 
             this.setDistanceToolStripMenuItem.Name = "setDistanceToolStripMenuItem";
             this.setDistanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.setDistanceToolStripMenuItem.Text = "Set distance";
+            this.setDistanceToolStripMenuItem.Click += new System.EventHandler(this.setDistanceToolStripMenuItem_Click);
             // 
             // SummaryStripDropDownButton2
             // 
             this.SummaryStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.SummaryStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showCo2EmitionToolStripMenuItem});
-            this.SummaryStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("SummaryStripDropDownButton2.Image")));
             this.SummaryStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SummaryStripDropDownButton2.Name = "SummaryStripDropDownButton2";
             this.SummaryStripDropDownButton2.Size = new System.Drawing.Size(71, 22);
@@ -174,8 +172,8 @@
         private System.Windows.Forms.ToolStripDropDownButton TransportStripDropDownButton3;
         private System.Windows.Forms.ToolStripDropDownButton SummaryStripDropDownButton2;
         private System.Windows.Forms.ToolStripMenuItem openHistoryFileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openFoodListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checCarbonPrintToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addnewfood;
+        private System.Windows.Forms.ToolStripMenuItem setfoodconsuption;
         private System.Windows.Forms.ToolStripMenuItem addVehicleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setDistanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showCo2EmitionToolStripMenuItem;

@@ -26,11 +26,42 @@ namespace Your_daily_carbon
         {
 
         }
-
-        private void openFoodListToolStripMenuItem_Click(object sender, EventArgs e)
+        private void addVehicleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            FoodList foodlist = new FoodList() {Dock = DockStyle.Fill ,TopLevel = false , TopMost = false};
+            vehicleAdder vehicle = new vehicleAdder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            vehicle.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Add(vehicle);
+            vehicle.Show();
+
+        }
+        private void setDistanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            vehicleList vehiclelist = new vehicleList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            vehiclelist.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Add(vehiclelist);
+            vehiclelist.Show();
+        }
+
+        private void and(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addFoodListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            foodAdder foodAdder = new foodAdder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
+            foodAdder.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Add(foodAdder);
+            foodAdder.Show();
+        }
+
+        private void setProductsConsumptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            FoodList foodlist = new FoodList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = false };
             foodlist.FormBorderStyle = FormBorderStyle.None;
             panel1.Controls.Add(foodlist);
             foodlist.Show();

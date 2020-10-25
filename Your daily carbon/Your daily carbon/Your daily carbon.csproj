@@ -49,6 +49,12 @@
     <Compile Include="CommunicationWithFiles.cs" />
     <Compile Include="CoreApp.cs" />
     <Compile Include="CurrentDataStorage.cs" />
+    <Compile Include="foodAdder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foodAdder.Designer.cs">
+      <DependentUpon>foodAdder.cs</DependentUpon>
+    </Compile>
     <Compile Include="FoodList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vehicleAdder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicleAdder.Designer.cs">
+      <DependentUpon>vehicleAdder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehicleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicleList.Designer.cs">
+      <DependentUpon>vehicleList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="foodAdder.resx">
+      <DependentUpon>foodAdder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FoodList.resx">
       <DependentUpon>FoodList.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +99,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vehicleAdder.resx">
+      <DependentUpon>vehicleAdder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicleList.resx">
+      <DependentUpon>vehicleList.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

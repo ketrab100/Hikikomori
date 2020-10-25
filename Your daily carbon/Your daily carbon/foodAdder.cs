@@ -10,27 +10,26 @@ using System.Windows.Forms;
 
 namespace Your_daily_carbon
 {
-    public partial class FoodList : Form
+    public partial class foodAdder : Form
     {
-        public FoodList()
+        public foodAdder()
         {
-            
             InitializeComponent();
             /*
-            foreach (var p in CoreApp.dataStorage.listofProducts)
+            foreach(var p in CoreApp.dataStorage.listofProducts)
             {
-                comboBox1.Items.Add(p.name);
+                ListViewItem lvi = new ListViewItem(textBox1.Text);
+                lvi.SubItems.Add(textBox2.Text);
+                listView1.Items.Add(lvi);
             }
             */
+            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ListViewItem lvi = new ListViewItem(comboBox1.Text);
-            lvi.SubItems.Add(textBox2.Text);
-            lvi.SubItems.Add(textBox3.Text);
-            listView1.Items.Add(lvi);
-            CoreApp.addProduct("asd", "asdas", "asd", "asd");
+            CoreApp.addProduct(textBox1.Text, textBox2.Text,"asdas","asdas");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
